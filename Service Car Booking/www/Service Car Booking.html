@@ -1,0 +1,30 @@
+{% macro render_Service Car Booking(Service Car Booking) %}
+	{% if Service Car Booking %}
+
+	<ul class="list-unstyled meetings-list">
+		{% for Service Car Booking in Service Car Booking %}
+		<a href="/Service Car Booking/{{ Service Car Booking.page_name }}">
+			<li>
+				{{ Service Car Booking.title }}<br>
+				<span class="text-muted">{{ frappe.format_date(meeting.date) }}: {{ meeting.from_time }} to {{ meeting.to_time }}</span>
+			</li>
+		</a>
+		{% endfor %}
+	</ul>
+
+	{% else %}
+
+	<p class="text-muted">No meetings listed</p>
+
+	{% endif %}
+{% endmacro %}
+
+<h2>Planned Meetings</h2>
+
+{{ render_Service Car Booking(planned_meetings) }}
+
+<hr>
+
+<h2>Past Service Car Booking</h2>
+
+{{ render_meetings(past_Service Car Booking) }}

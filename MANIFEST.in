@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include Service Car Booking *.css
+recursive-include Service Car Booking *.csv
+recursive-include Service Car Booking *.html
+recursive-include Service Car Booking *.ico
+recursive-include Service Car Booking *.js
+recursive-include Service Car Booking *.json
+recursive-include Service Car Booking *.md
+recursive-include Service Car Booking *.png
+recursive-include Service Car Booking *.py
+recursive-include Service Car Booking *.svg
+recursive-include Service Car Booking *.txt
+recursive-exclude Service Car Booking *.pyc
